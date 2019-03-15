@@ -1,0 +1,12 @@
+#rojo{
+	background-color: red;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+}
+#verde{
+	background-color: green;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+}
