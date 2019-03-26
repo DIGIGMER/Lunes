@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lunes</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let contador = 1;
+		const crearHijos = function() {
+			const hijo_nuevo = document.createElement("div");
+			hijo_nuevo.style.width = "30%";
+			hijo_nuevo.style.height = "30px";
+			hijo_nuevo.style.border = "1px solid #000";
+			hijo_nuevo.style.display = "inline-block";
+			hijo_nuevo.innerText = "hijo" + contador;
+			contador++;
+			return hijo_nuevo;
+
+		}
+
+		const contenedor = document.createElement("div");
+		contenedor.style.width = "1000px";
+		contenedor.style.height = "600px";
+		contenedor.style.border = "2px solid #000";
+
+		const titulo = document.createElement("div");
+		titulo.style.width = "100%";
+		titulo.style.height = "30px";
+		titulo.style.backgroundColor = "pink";
+		titulo.style.border = "1px solid #000";
+		titulo.innerText = "titulo";
+		titulo.style.textAlign = "center";
+
+		const divizq = document.createElement("div");
+		divizq.style.width = "498px";
+		divizq.style.height = "300px";
+		divizq.style.border = "1px solid red";
+		divizq.style.display = "inline-block";
+
+		const divder = divizq.cloneNode(true);
+		divder.style.border = "1px solid blue";
+
+		var variable = 10;
+		var aleatorio = Math.floor(Math.random()*11);
+		for (var condicional = 1; condicional <=variable; condicional++) {
+			var hijo_automatico = crearHijos();
+			divizq.appendChild(hijo_automatico);
+
+			if (condicional === 6) {
+				hijo_automatico.style.backgroundColor = "green";
+			}
+			else if (condicional === 2) {
+				hijo_automatico.style.backgroundColor = "orange";
+			}
+			if (aleatorio === condicional) {
+				hijo_automatico.style.backgroundColor = "violet";
+			}
+		}
+
+		document.body.appendChild(contenedor);
+		contenedor.appendChild(titulo);
+		contenedor.appendChild(divizq);
+
+		contenedor.appendChild(divder);
+	</script>
+</body>
+</html>
