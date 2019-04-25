@@ -1,0 +1,24 @@
+.CA{
+	width: 150px;
+	height: auto;
+	background-color: cyan;
+	border: 2px solid blue;
+	text-align: center;
+	cursor: pointer;	
+}
+.CA:active{
+	background-color: blue;
+	color: #fff;
+}
+.link{
+	color: red;
+	text-decoration: underline;
+	font-size: 20px;
+}
+.link:hover{
+	text-decoration: none;
+	font-size: 18px;
+}
+#ES{
+	display: none;
+}

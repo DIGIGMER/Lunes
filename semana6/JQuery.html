@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lunes</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./estilos.css">
+	<!--script type="text/javascript">
+		$(document).ready(function(){
+			$("p").click(function(){
+				alert("hola")
+			});
+		});
+	</script-->
+</head>
+<body>
+	<!-- <button onclick="window.open('https://www.google.com')">Enlace</button> -->
+	<p id="ES">Esto es un ejemplo</p>
+	<p class="CA">Click Aqui</p>
+	<p id="OC">Otro click</p>
+	<a href="https://www.google.com" target="_blank">Enlace</a>
+	<script type="text/javascript">
+		$(".CA").click(function(){
+				alert("hola");
+				$("#OC").css("background-color", "green");
+				$("#ES").show();
+			});
+		$("#OC").click(function(){
+			$("a").attr("href", "http://www.hidalgo.gob.mx");
+			$("a").addClass("link");
+		})
+	</script>
+</body>
+</html>

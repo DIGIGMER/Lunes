@@ -1,0 +1,29 @@
+.circulo{
+	background-color: red;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	/*animation: cc 4s infinite;*/
+}
+@keyframes cc{
+	0%{
+		
+	}
+	30%{
+		background-color: green;
+	}
+	50%{
+		background-color:blue;
+		margin-left: 30px;
+		border-radius: 20%
+	}
+	70%{
+		background-color: pink;
+	}
+	100%{
+		background-color: red;
+		margin-left: 15px;
+		border-radius: 0%;
+
+	}
+}
